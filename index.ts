@@ -1,11 +1,3 @@
-import { ConsoleAdapter } from "botbuilder";
-
-new ConsoleAdapter().listen(ctx => {
-    
-    if (ctx.activity.text === 'message') 
-        ctx.sendActivity(ctx.activity.text);
-})
-
 import { BotFrameworkAdapter } from 'botbuilder';
 import * as restify from 'restify';
 
