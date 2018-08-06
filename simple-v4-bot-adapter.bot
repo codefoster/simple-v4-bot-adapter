@@ -1,0 +1,15 @@
+{
+    "name": "simple-v4-bot-adapter",
+    "description": "",
+    "secretKey": "",
+    "services": [
+        {
+            "appId": "",
+            "id": "8a1d61e0-998d-11e8-a699-372b7ac15d9f",
+            "type": "endpoint",
+            "appPassword": "",
+            "endpoint": "http://localhost:3978/api/messages",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ]
+}
