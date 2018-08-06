@@ -8,10 +8,10 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 const adapter = new BotFrameworkAdapter();
 
-server.post('/api/messages', (req, res) => {
+server.post('/api/messages', async (req, res) => {
     adapter.processActivity(req, res, async ctx => {
         if (ctx.activity.type === 'message') {
-            ctx.sendActivity(ctx.activity.text);
+            await ctx.sendActivity(ctx.activity.text);
         }
     });
 });
